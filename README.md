@@ -29,6 +29,10 @@ You can modify the countries variable within the script to include or exclude sp
 Run the script as root:
 
 ```
+ipset create allow_cc hash:net family inet hashsize 1024 maxelem 65536
+```
+
+```
 ./ipset.sh
 ```
 
